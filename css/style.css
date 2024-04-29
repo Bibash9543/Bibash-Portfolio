@@ -1,0 +1,162 @@
+@import 'utilities.css';
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+
+}
+header{
+    background-color: var(--dark);
+    border: 2px solid yellow;
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 90%,0 100%);
+}
+.container{
+    max-width: 1152px;
+    border: 2px solid red;
+    padding: 0px 5px;
+    margin: 0  auto;
+}
+header nav .left a{
+    text-decoration: none;
+    color: var(--light);
+    border: 2px solid green;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+header nav{
+    border: 2px solid blue;
+    padding: 1.5rem 0;
+}
+header .brand{
+    border: 2px solid brown;
+    margin-right: 3rem;
+
+}
+.btn{
+    padding: .8rem 2rem;
+    font-size: 1rem;
+    font-weight: 550;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all .3s ;
+}
+.btn-primary{
+    background: var(--primary);
+    color: var(--secondary);
+}
+.btn-primary:hover{
+    background: transparent;
+    color: var(--primary);
+    border-color:var(--primary);
+}
+.hero{
+    padding: 1rem 0;
+}
+.hero .left img{
+    width: 300px;
+}
+.hero .right{
+    color: var(--light);
+    margin-top: -7rem;
+    border: 2px solid red;
+}
+.hero .right h6{
+    font-size:1.5rem;
+    color: var(--primary);
+}
+.hero .right h1{
+    font-size: 3rem;
+    font-weight: 100;
+    border: 2px solid red;
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+.hero .right p{
+    line-height: 1.9;
+    margin: 10px 0px;
+}
+.hero .right .btn-secondary{
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+.hero .right .btn-secondary:hover{
+    background: var(--primary);
+    color: var(--dark);
+}
+.hero img{
+    border: 2px solid goldenrod;
+}
+.flex1{
+    flex: 1;
+}
+.justify-center{
+    justify-content: center;
+}
+
+section.about{
+    padding: 50px 0;
+}
+section.about .left img{
+    width: 250px;
+}
+section.about .right h1{
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+
+}
+section.about .right h1 span{
+    color: var(--primary);
+}
+section.about .right h3{
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-bottom:1rem;
+}
+section.about .right p{
+    line-height:1.7rem;
+    color: var(--ternary);
+    margin-bottom:2rem;
+}
+section.about .right .icons{
+    display: flex;
+}
+section.about .right .icons a{
+    background-color: var(--dark);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: .6rem;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+section.about .right .icons a img{
+    width: 100%;
+    height: 100%;
+    padding: .2rem;
+}
+section.about .right .icons a:hover{
+    background-color: var(--primary);
+}
