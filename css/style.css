@@ -1,16 +1,18 @@
 @import 'utilities.css';
 
 :root{
-    --primary:#3DCFD3;
+    --primary:#DF007C;
     --dark:#161616;
     --pure:#FFFFFF;
     --ternary:#898989;
     --light:#F2F2F2;
+    --secondary:#070606;
 
 }
 body{
     font-family: 'Poppins', sans-serif;
 }
+
 *{
     padding: 0;
     margin: 0;
@@ -20,19 +22,19 @@ body{
 }
 header{
     background-color: var(--dark);
-    border: 2px solid yellow;
+    
     clip-path: polygon(0 0,100% 0,100% 100%,70% 90%,0 100%);
 }
 .container{
     max-width: 1152px;
-    border: 2px solid red;
+    
     padding: 0px 5px;
     margin: 0  auto;
 }
 header nav .left a{
     text-decoration: none;
     color: var(--light);
-    border: 2px solid green;
+    
     margin-right: 2rem;
     text-transform: uppercase;
     transition: all 0.3s ease;
@@ -42,11 +44,11 @@ header nav .left a:hover{
     color: var(--primary);
 }
 header nav{
-    border: 2px solid blue;
+    
     padding: 1.5rem 0;
 }
 header .brand{
-    border: 2px solid brown;
+    
     margin-right: 3rem;
 
 }
@@ -73,12 +75,12 @@ header .brand{
     padding: 1rem 0;
 }
 .hero .left img{
-    width: 300px;
+    height: 500px;
 }
 .hero .right{
     color: var(--light);
     margin-top: -7rem;
-    border: 2px solid red;
+    
 }
 .hero .right h6{
     font-size:1.5rem;
@@ -87,7 +89,7 @@ header .brand{
 .hero .right h1{
     font-size: 3rem;
     font-weight: 100;
-    border: 2px solid red;
+    
 }
 .hero .right h1 span{
     color: var(--primary);
@@ -105,9 +107,7 @@ header .brand{
     background: var(--primary);
     color: var(--dark);
 }
-.hero img{
-    border: 2px solid goldenrod;
-}
+
 .flex1{
     flex: 1;
 }
@@ -119,7 +119,7 @@ section.about{
     padding: 50px 0;
 }
 section.about .left img{
-    width: 250px;
+    width: 350px;
 }
 section.about .right h1{
     font-size: 1.3rem;
@@ -160,3 +160,171 @@ section.about .right .icons a img{
 section.about .right .icons a:hover{
     background-color: var(--primary);
 }
+
+section.services{
+    background: var(--light);
+}
+section.services .text{
+    text-align: center;
+    margin-top: 1.5rem;
+    
+}
+.service-text{
+    text-align: center;
+    color: var(--ternary);
+    margin-bottom: 7rem;
+
+
+}
+.services h1 span{
+    color: var(--primary);
+}
+.services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 4.5rem;
+}
+.services .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    transition: all .3s ease;
+    
+
+}
+.services .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.services .card-wrapper .card h2{
+    text-align: center;
+    font-weight: 400;
+    margin: 1rem 0;
+    font-size: .99rem;
+
+}
+.services .card-wrapper .card p{
+    color: var(--ternary);
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.25rem;
+}
+.services .card-wrapper .card:hover{
+    background: var(--dark);
+}
+.services .card-wrapper .card:hover h2,.services .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+
+
+section.freelance{
+    margin: 3rem 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0, 0, 0,0.7)),url(../images/camera.png);
+    height: 300px;
+    color: var(--pure);
+    padding-top: 2rem;
+    clip-path: polygon(0 0,100% 0,100% 100%,65% 75%,0 100%);
+
+}
+.freelance .btn{
+    margin-top: 1rem;
+}
+
+.card-wrapper2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+}
+
+.work-text{
+    margin: 2rem 0;
+    text-align: center;
+}
+.work-text h1 span{
+    color: var(--primary);
+}
+.work-text p{
+    color: var(--ternary);
+}
+.card-wrapper2 .card{
+    width: 250px;
+    position: relative;
+    transition: all .3s ease;
+}
+.card-wrapper2 .card img{
+    width: 100%;
+}
+.card-wrapper2 .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3DCFD3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+
+}
+.card-wrapper2 .card:hover .overlay{
+    opacity: 1;
+}
+.overlay span{
+    color: beige;
+}
+.card-wrapper2 .card .overlay a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.blog{
+    margin-top: 4rem;
+    background: var(--dark);
+    height: 930px;
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 88%,0 100%);
+}
+.blogFirst{
+    padding-top: 3rem;
+    text-align: center;
+    color: var(--light);
+}
+.blogFirst span{
+    color: var(--primary);
+}
+.para{
+    text-align: center;
+    color: var(--ternary);
+    margin-bottom: 5rem;
+}
+.blog-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+.blog-wrapper .blog-content{
+    padding-top: 2rem;
+    background: var(--light);
+    padding-bottom: 2rem;
+}
+.blog-wrapper .blog-content h1{
+    font-weight: 400;
+    font-size: 15px;
+}
+.blog-wrapper .blog-content span{
+    color: var(--ternary);
+}
+.blog-wrapper .blog-content p{
+    margin: 1.3rem 0;
+    color: var(--ternary);
+}
+.blog-wrapper .blog-content a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
