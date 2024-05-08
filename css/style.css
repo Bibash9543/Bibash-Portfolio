@@ -11,6 +11,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    height: 8000px;
 }
 
 *{
@@ -327,4 +328,37 @@ section.freelance{
     text-decoration: none;
     color: var(--dark);
 }
+.heading-contact{
+    color: var(--dark);
+}
 
+section.contact .icon-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+}
+section.contact .icon-wrapper .contact-icon{
+    text-align: center;
+}
+
+section.contact .icon-wrapper .contact-icon img{
+    margin-bottom: 1rem;
+}
+section.contact .icon-wrapper .contact-icon h2{
+    font-weight: 400;
+
+}
+section.contact .icon-wrapper .contact-icon span{
+    color: var(--ternary);
+}
+section.fotor{
+    background-color: var(--dark);
+    height: 300px;
+    margin-top: 50px;
+}
+section.fotor .container{
+    
+    text-align: center;
+    color: var(--light);
+
+}
