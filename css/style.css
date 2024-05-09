@@ -11,7 +11,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    height: 8000px;
+    height: 5000px;
 }
 
 *{
@@ -352,13 +352,70 @@ section.contact .icon-wrapper .contact-icon span{
     color: var(--ternary);
 }
 section.fotor{
-    background-color: var(--dark);
+    
     height: 300px;
     margin-top: 50px;
 }
 section.fotor .container{
     
     text-align: center;
+    color: var(--primary);
+
+}
+section.payment{
+    height: 800px;
+    background-color: var(--dark);
+    margin-top: 10rem;
+    clip-path: polygon(0 0,100% 0,100% 100%,70% 88%,0 100%);
+}
+section.payment .text-payment{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.text-payment h1{
+    font-weight: 300;
+    color: var(--light);
+    margin-bottom: 4rem;
+}
+.text-payment h1 span{
+    color: var(--primary);
+}
+section.payment .display-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
     color: var(--light);
 
+}
+section.payment .display-wrapper .text-wrapper{
+    background: var(--secondary);
+}
+.plans-benefit{
+    margin-top: 3rem;
+    padding-left: 3rem;
+    line-height: 2.5rem;
+}
+.plans-benefit button{
+    margin:2rem 0;
+    border: 1px solid rgb(170, 60, 60);
+    color: var(--light);
+    background: var(--secondary);
+    font-size: 1.2rem;
+    padding: 1rem;
+    transition: all .3s ease;
+    border-radius: 1.5rem;
+
+}
+.plans-benefit button:hover{
+    background: #DF007C;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+section.payment .text-wrapper h1{
+    padding: 1.5rem 0;
+    text-align: center;
+}
+section.payment .text-wrapper h3{
+    text-align: center;
 }
