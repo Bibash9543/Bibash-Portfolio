@@ -9,9 +9,12 @@
     --secondary:#070606;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
-    height: 5000px;
+    height: 5500px;
 }
 
 *{
@@ -351,21 +354,43 @@ section.contact .icon-wrapper .contact-icon h2{
 section.contact .icon-wrapper .contact-icon span{
     color: var(--ternary);
 }
-section.fotor{
-    
-    height: 300px;
-    margin-top: 50px;
+section.contact form{
+    margin-top: 3rem;
 }
-section.fotor .container{
-    
-    text-align: center;
-    color: var(--primary);
+section.contact .text-input-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+}
+section.contact .text-input-2{
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact input{
+    margin-bottom: 2rem;
+    padding: .4rem;
+}
+section.contact input:focus{
+    outline:none;
+}
+section.contact textarea{
+    margin-bottom: 2rem;
 
 }
+section.contact textarea:focus{
+    outline: none;
+}
+section.contact .btn-contact{
+    text-align: center;
+}
+
+
+
 section.payment{
     height: 800px;
     background-color: var(--dark);
-    margin-top: 10rem;
+    margin-top: 6rem;
     clip-path: polygon(0 0,100% 0,100% 100%,70% 88%,0 100%);
 }
 section.payment .text-payment{
@@ -419,3 +444,20 @@ section.payment .text-wrapper h1{
 section.payment .text-wrapper h3{
     text-align: center;
 }
+.fotor{
+    background: var(--dark);
+    height: 250px;
+    text-align: center;
+    color: var(--light);
+}
+.img-footer{
+    text-align: center;
+    
+    word-spacing: 2rem;
+    margin: 2rem 0;
+}
+.img-footer a{
+    text-decoration: none;
+}
+
+
